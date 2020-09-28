@@ -69,3 +69,17 @@ h1, h2, h3, h4, h5, h6 {
 .lead .btn {
     text-shadow: none;
 }
+
+.post {
+    margin-bottom: 4rem;
+}
+
+.post-title {
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+}
+
+.post-meta {
+    margin-bottom: 1.25rem;
+    color: #999;
+}
