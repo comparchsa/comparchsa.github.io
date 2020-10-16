@@ -66,16 +66,16 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 1px 1px black;
 }
 
-.lead-welcome {
-    background-position: center center;
-    background-size: cover;
-    background-image: url(../images/welcome.jpg);
-}
-
 .lead-about {
     background-position: center center;
     background-size: cover;
     background-image: url(../images/about.jpg);
+}
+
+.lead-welcome {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../images/welcome.jpg);
 }
 
 .lead-resources{
