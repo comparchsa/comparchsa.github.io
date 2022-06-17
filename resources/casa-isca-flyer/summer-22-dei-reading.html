@@ -3,11 +3,17 @@
     <title>Summer 2022 DEI Reading Group</title>
     <link rel="stylesheet" href="arrows.css">
     <link href="https://db.onlinewebfonts.com/c/8af4f981069f65fe3806caf753e04464?family=Karumbi" rel="stylesheet" type="text/css"/> 
-    <link href="http://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
     <style>
       .title {
           font-size: 5em;
           font-family: "Karumbi", sans-serif;
+      }
+
+      .blog-link {
+          font-size: 2em;
+          font-family: "Open Sans Light", sans-serif;
+          font-style: normal;
       }
 
       .supl {
@@ -19,11 +25,18 @@
           padding-left: 20%;
           padding-right: 20%; 
           width: 60%;
-          padding-top: 4em;
-          padding-bottom: 4em;
           font-size: 1.5em;
           margin: 0 !important;
           font-family: sans-serif;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .panel-content {
+          padding-top: 4em;
+          padding-bottom: 4em;
       }
 
       .emph {
@@ -52,6 +65,10 @@
           color: #383838;
       }
 
+      .dark-svg {
+          filter: brightness(10%);
+      }
+
       .dark-links > a:visited {
           color: #383838;
       }
@@ -75,44 +92,74 @@
           color: white;
           background-color: #C70A80;
       }
+        
+      .casa-logo {
+          filter: brightness(4%);
+      }
     </style>
   </head>
   <body>
     <div class="panel bg-prm1">
-      <div class="title">Summer 2022 DEI Group</div>
-      <p class="supl">
-        Checkout the highlights from our upcoming readings.
-      </p>
-      <br>
-      <svg class="arrows">
-        <path class="a1" d="M0 0 L30 32 L60 0"></path>
-        <path class="a2" d="M0 20 L30 52 L60 20"></path>
-        <path class="a3" d="M0 40 L30 72 L60 40"></path>
-      </svg>
-    </div>
-    <div class="panel bg-prm2">
-      
-      At one of my first PC meetings, a Full Professor in Architecture saw me
-      for the first time, and said: 
-      <div class="emph">
-        "Are you the token woman? Are you qualified?"
-      </div>
-      <div class="ref dark-links">
-        From <a href="https://www.sigarch.org/what-happens-to-us-does-not-happen-to-most-of-you/">What Happens to Us Does Not Happen to Most of You</a>
+      <div class="panel-content">
+        <div class="title">Summer 2022 DEI Group</div>
+        <p class="supl">
+          Checkout the highlights from our upcoming readings.
+        </p>
+        <br>
+        <a href="javascript:void" onclick="nextPage('panel1');">
+          <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+        </a>
       </div>
     </div>
-    <div class="panel bg-prm3">
-      Susan Fowler's account of sexual harassment at Uber. 
-      <div class="emph">
-        Uber was later
-        investigated by EEOC, resulting in $4.4 million settlement.
-      </div>
-      <div class="ref light-links">
-        From <a href="https://www.susanjfowler.com/blog/2017/2/19/reflecting-on-one-very-strange-year-at-uber"> Reflecting on one very, very strange year at Uber</a>
+    <div id="panel1" class="panel bg-prm2">
+      <div class="panel-content">
+        At one of my first PC meetings, a Full Professor in Architecture saw me
+        for the first time, and said: 
+        <div class="emph">
+          "Are you the token woman? Are you qualified?"
+        </div>
+        <div class="ref dark-links">
+          From <a href="https://www.sigarch.org/what-happens-to-us-does-not-happen-to-most-of-you/">What Happens to Us Does Not Happen to Most of You</a>
+        </div>
+        <br>
+        <a href="javascript:void" onclick="nextPage('panel2');">
+          <svg class="arrows dark-svg">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+        </a>
+
       </div>
     </div>
 
-    <div class="panel bg-prm1">
+    <div tabindex="2" id="panel2" class="panel bg-prm3">
+      <div class="panel-content">
+        Susan Fowler's account of sexual harassment at Uber. 
+        <div class="emph">
+          Uber was later
+          investigated by EEOC, resulting in $4.4 million settlement.
+        </div>
+        <div class="ref light-links">
+          From <a href="https://www.susanjfowler.com/blog/2017/2/19/reflecting-on-one-very-strange-year-at-uber"> Reflecting on one very, very strange year at Uber</a>
+        </div>
+        <br>
+        <a href="javascript:void" onclick="nextPage('panel3');">
+          <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div tabindex="3" id="panel3" class="panel bg-prm1">
+      <div class="panel-content">
         A few years after neuroscientist Ben Barres became a tenured professor
         at Stanford, he overheard a colleague talking about one of his classes:
         <div class="emph">
@@ -124,16 +171,38 @@
           From <a href="https://www.nature.com/scitable/content/does-gender-matter-by-ben-a-barres-10602856/">Does
             Gender Matter? by Ben A Barres</a>
         </div>
+        <br>
+        <a href="javascript:void" onclick="nextPage('panel4');">
+          <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+        </a>
+
+
+      </div>
     </div>
 
-    <div class="panel bg-prm2">
-      <p class="ref dark-links">
-        For more info, checkout the blog:<a href="example.com">TODO add link</a><br><br>
-        Organized by the <a href="https://sigarch.org/casa">Computer Architecture Student Association (CASA)</a>
-      </p>
-
-      
+    <div id="panel4" class="panel bg-prm2">
+      <div>
+        <p class="ref dark-links">
+          <div class="blog-link">
+            For more info, checkout the <a href="example.com">sigarch blog</a>.<br><br>
+          </div>
+          <br>
+          <br>
+          <br>
+          <img class="casa-logo" src="casa-logo-unicolor.svg"/>
+          <br>
+          Organized by the <a href="https://sigarch.org/casa">Computer Architecture Student Association (CASA)</a>
+        </p>
+      </div>      
     </div>
-
+  <script type="text/javascript">
+    function nextPage(nextId) {
+        document.getElementById(nextId).scrollIntoView({behavior: 'smooth'});
+    }
+  </script>
   </body>
 </html>
