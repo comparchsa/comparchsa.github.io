@@ -1,4 +1,4 @@
-Author: Gururaj Saileshwar
+# Author: [Gururaj Saileshwar](https://gururaj-s.github.io/)
 
 Purpose: A document to support future organizers of Meet-A-Senior-Architect (MASA) and Meet-A-Senior-Student (MASS). This document outlines the timeline for setting up MASS/MASA at computer architecture conferences. This is based on the process which was followed for MASS/MASA at  ASPLOS-2021. A similar but less automated process was also followed at MICRO-2020.
 MASA is targeted at all student attendees & matches a student with a senior architect (folks in industry/academia)
